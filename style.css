@@ -1,0 +1,183 @@
+    
+         
+        :root {
+            --primary-green: #2e7d32;
+            --light-green: #4caf50;
+            --bg-color: #f1f8e9;
+            --text-dark: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+        }
+
+        
+        header {
+            background-color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .h_btns{
+            display: flex;
+            gap: 8px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-green);
+        }
+
+        .login-btn {
+            background-color: var(--primary-green);
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(46, 125, 50, 0.3);
+        }
+
+        .login-btn:hover {
+            background-color: var(--light-green);
+            transform: translateY(-2px);
+        }
+
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 50px;
+            text-align: center;
+            background: linear-gradient(rgba(241, 248, 233, 0.9), rgba(241, 248, 233, 0.9)),url('images/body_background_dashboard.avif') center/cover;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+ 
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 30%;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);  
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+       
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+ 
+        .chat-bot-icon {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            display: flex;
+            padding: 10px;
+        }
+
+        .chat-bot-icon:hover {
+            transform: scale(1.1);
+        }
+
+/* ================= MOBILE RESPONSIVE (MEDIA QUERIES) ================= */
+    @media screen and (max-width: 768px) {
+    
+    
+    header {
+        padding: 15px 20px; 
+        flex-direction: column;  
+        gap: 15px; 
+    }
+
+    
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;  
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+ 
+    .features {
+        padding: 20px;
+        flex-direction: column;  
+    }
+
+    .card {
+        width: 100%;  
+        margin-bottom: 30px; 
+    }
+    
+    
+    .chat-bot-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+    
