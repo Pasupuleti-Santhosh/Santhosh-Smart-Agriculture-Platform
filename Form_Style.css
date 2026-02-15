@@ -13,7 +13,7 @@
             justify-content: center;
            
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                        url('images/login_background') no-repeat center center/cover;
+                        url('login_background') no-repeat center center/cover;
         }
 
         
@@ -112,4 +112,5 @@
         padding: 12px;
     }
 }
+
     
